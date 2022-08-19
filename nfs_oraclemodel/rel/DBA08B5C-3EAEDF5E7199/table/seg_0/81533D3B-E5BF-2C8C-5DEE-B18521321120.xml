@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81533D3B-E5BF-2C8C-5DEE-B18521321120" name="PROPERTY_TYPE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>1F62AA64-C40B-6AEE-BBD9-8C9B3967D89C</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="proptype_no" id="3CBE4B38-5BE4-74E8-10F3-2E76F0869061">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[property type index]]></commentInRDBMS>
+<generatorID>6DA720E9-828E-0368-D4C8-E00106634D3C</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proptype_nname" id="D65CC6EE-6615-07CF-1111-B04E751C7D45">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[property type name]]></commentInRDBMS>
+<generatorID>977867F6-0322-C17B-1A31-C2CC217A71CD</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4907FAB7-F6E2-5826-B5B6-1060E8F6E13E" name="PROPERTY_TYPE_PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>9559000B-F9C6-3EF9-88BC-C3A48CC6863B</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CBE4B38-5BE4-74E8-10F3-2E76F0869061"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fire_event_lga" directorySegmentName="seg_0" id="795E00C8-0BE7-F743-E1C9-2298AA94289B">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:24:17 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<sourcePk>2CEA45B5-703E-1CFB-3117-15FD6DB769BE</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>occurs</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AADC4D42-4CE2-8758-6606-33393C557E00</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>61A81624-5985-96F1-95D3-DB84C31279B8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

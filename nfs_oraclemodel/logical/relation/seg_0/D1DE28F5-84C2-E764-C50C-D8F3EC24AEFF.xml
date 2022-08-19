@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fire_damage" directorySegmentName="seg_0" id="D1DE28F5-84C2-E764-C50C-D8F3EC24AEFF">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:52:42 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<sourcePk>2CEA45B5-703E-1CFB-3117-15FD6DB769BE</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>make</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AADC4D42-4CE2-8758-6606-33393C557E00</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A19A9165-A2A5-0192-92CB-7F27F89F8A71</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

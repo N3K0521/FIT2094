@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fire_event_spark" directorySegmentName="seg_0" id="2ED5991A-E6D4-542B-594C-B90593C729F3">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:21:04 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<targetPk>2CEA45B5-703E-1CFB-3117-15FD6DB769BE</targetPk>
+<identifying>false</identifying>
+<nameOnSource>sparks</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AADC4D42-4CE2-8758-6606-33393C557E00</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AADC4D42-4CE2-8758-6606-33393C557E00</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D50F722F-A7CF-4AD4-0682-BB480C752892" containerWithKeyObject="7A4F440A-D385-EFA8-F3C4-3DB85DFF8C5A" localFKIndex="87EE2620-DBFF-DE79-971D-018CFFF02389" name="fire_event_lga">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>795E00C8-0BE7-F743-E1C9-2298AA94289B</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<referredTableLongName>FIRE_EVENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F8B21B6D-9E73-EAE1-7481-5AE3CA2B41B4</referredTableID>
+<keyObject>424D233B-4C67-63CF-4EE9-043C28CDDFBE</keyObject>
+<referredKeyID>424D233B-4C67-63CF-4EE9-043C28CDDFBE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>fire_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

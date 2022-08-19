@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="insurer_insurance" directorySegmentName="seg_0" id="1C4A1D97-01ED-4C1E-70D8-BCC377C7AAA6">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:46:15 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<sourcePk>1415D409-1224-8FB5-774F-67EDA1067D44</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E3AC7D9E-C62A-9D9E-9B72-C35897DE5CDB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>70DA0F4C-34CA-DED4-4A2E-9AE7DC5E344B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

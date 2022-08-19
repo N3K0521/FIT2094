@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="678624D5-4366-A61A-D815-5498305AFDE6" name="LGA">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>DD006BBC-1802-B9B4-33DB-7E826BFAFBD8</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lga_code" id="67ED6E2E-64AA-D43D-33B7-2FD2BFBCDF8C">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga code ]]></commentInRDBMS>
+<generatorID>E6A58137-37FB-3D4E-17FF-B2DD272CDE31</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lga_ame" id="F415C78A-8E08-2CE0-3D5A-6C71C170DACC">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga name]]></commentInRDBMS>
+<generatorID>93474C14-A24F-A2FD-CCEE-CD0164B05DA2</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lga_size" id="54BF874F-F406-D545-9804-83868B091422">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga size]]></commentInRDBMS>
+<generatorID>C684EA63-4388-1DB4-F402-F9425F5B9C27</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,10,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lga_ceo" id="7CDC11FF-18F9-8F7C-1794-0F416A755907">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga ceo]]></commentInRDBMS>
+<generatorID>F46B013B-9172-A0F5-00AC-0B7A258ED8E8</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lga_phone" id="95AE40A4-B57E-2175-4887-47DD02A65409">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga phone]]></commentInRDBMS>
+<generatorID>E782B5DF-9C61-7C50-6B1C-D4E551D653CE</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lga_type" id="CC7ED209-4BBB-A2BB-124F-3B82178B9E25">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga type connstrainted by city shire borough rural city]]></commentInRDBMS>
+<generatorID>40973284-0690-D757-F29B-7A035AAEA312</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<constraintName>lga_type_consntrainnt</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="borough" description="borough"/>
+<valueDef value="city" description="city"/>
+<valueDef value="rural city" description="rural city"/>
+<valueDef value="shire" description="shire"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lga_state" id="D6676D51-4248-9E95-FE9F-C0A6B107A82C">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga state]]></commentInRDBMS>
+<generatorID>659FE792-8018-6BA5-262D-46CC884BF33F</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E235777F-91C6-6595-E19E-D5823D5B38F2" name="LGA_PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>7ADD62AD-8DB5-077D-BE10-B43B0C27917C</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67ED6E2E-64AA-D43D-33B7-2FD2BFBCDF8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

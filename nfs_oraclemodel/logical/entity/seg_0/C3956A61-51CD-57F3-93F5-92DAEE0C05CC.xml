@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3956A61-51CD-57F3-93F5-92DAEE0C05CC" name="BUILDING">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:01:03 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="property_id" id="CDCC4522-57AE-69D9-7635-4F14E0687817">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:08:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[property id]]></commentInRDBMS>
+<generatorID>029AF2A8-ECD0-EFEE-4FD4-85612E450F73</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<referedAttribute>68D7BAE0-D679-8083-0C91-3AB3870FF94F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_id" id="394A5589-2624-89ED-D827-46F7F9E4D8D4">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:02:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[building id]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_approved_date" id="60F50F87-37F0-8CCB-C790-B935FF1BE5F4">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:02:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[building approve date]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_size" id="C14B7200-DF78-29E2-5E7B-2AC81658CE13">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:02:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[building size]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,6,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_class" id="8FFD8047-AF62-8814-A982-38459219EFF7">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:02:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[building class]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_lga_value" id="51511C08-3C95-1EAD-457A-2BBFB92C5A79">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:02:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[building current value for lga]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3601471A-30BD-0E1B-99E1-2622058A8ABE" name="BUILDING PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:02:56 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>394A5589-2624-89ED-D827-46F7F9E4D8D4</attributeRef>
+<attributeRef>CDCC4522-57AE-69D9-7635-4F14E0687817</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

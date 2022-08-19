@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="216F6A84-C230-9F67-A22D-79B0F11DEDBD" name="BD_ASSESSOR_VISIT">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>4271ABFC-BD5D-7B4C-DA9E-808D0720FEFF</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BUILDING_DAMAGE_bd_id" id="B3EB6F91-D282-3860-E66D-6FADF317C687">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[building damage id (surrogate key)]]></commentInRDBMS>
+<generatorID>0A46F2A3-A0DD-D8CC-44E6-5F65A8D6C3EC</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07A12F45-B47C-814C-B20B-EF4E2C75F63C" referredColumn="7303BB97-7C8C-76B6-ADBA-B419FBBD42E5"/>
+</associations>
+</Column>
+<Column name="bdav_datetime_arrived" id="0738A8A5-0F23-03F3-4141-B42FCDC85FAF">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[bd assessor arrive date]]></commentInRDBMS>
+<generatorID>ACA3C06D-0591-54AB-AE74-D77AD461B5FA</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bdav_datetime_departed" id="C27A185D-F651-B7F3-2189-86D934E5EC7B">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[bdav_datetime_departed]]></commentInRDBMS>
+<generatorID>7D6862D2-BECE-2E4C-CA23-D45EFED6355D</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39610AE2-AF7D-9446-929C-DEF53AC598FA" name="BD_INSURER_VISIT_PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>846DED71-F320-3727-1B74-13333BD9670E</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3EB6F91-D282-3860-E66D-6FADF317C687"/>
+<colUsage columnID="0738A8A5-0F23-03F3-4141-B42FCDC85FAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFD96349-438A-3773-BA6A-45CA4FB46876" name="BD_ASSESSOR_VISIT">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>AFF3480B-53C4-63CC-3840-4EFF8D2BB02C</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3EB6F91-D282-3860-E66D-6FADF317C687"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

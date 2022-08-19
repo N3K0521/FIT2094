@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F62AA64-C40B-6AEE-BBD9-8C9B3967D89C" name="PROPERTY_TYPE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 07:44:37 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="proptype_no" id="6DA720E9-828E-0368-D4C8-E00106634D3C">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 07:44:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[property type index]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="proptype_nname" id="977867F6-0322-C17B-1A31-C2CC217A71CD">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 07:45:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[property type name]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9559000B-F9C6-3EF9-88BC-C3A48CC6863B" name="PROPERTY_TYPE PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 07:46:08 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6DA720E9-828E-0368-D4C8-E00106634D3C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

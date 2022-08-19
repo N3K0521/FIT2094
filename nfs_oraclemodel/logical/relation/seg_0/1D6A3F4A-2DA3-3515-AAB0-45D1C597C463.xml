@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="building_insurance" directorySegmentName="seg_0" id="1D6A3F4A-2DA3-3515-AAB0-45D1C597C463">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:46:45 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<sourcePk>3601471A-30BD-0E1B-99E1-2622058A8ABE</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C3956A61-51CD-57F3-93F5-92DAEE0C05CC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>70DA0F4C-34CA-DED4-4A2E-9AE7DC5E344B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

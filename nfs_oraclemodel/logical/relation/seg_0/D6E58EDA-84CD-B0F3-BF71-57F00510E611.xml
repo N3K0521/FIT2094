@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="building_damage" directorySegmentName="seg_0" id="D6E58EDA-84CD-B0F3-BF71-57F00510E611">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:50:48 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<sourcePk>3601471A-30BD-0E1B-99E1-2622058A8ABE</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>incurs</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C3956A61-51CD-57F3-93F5-92DAEE0C05CC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A19A9165-A2A5-0192-92CB-7F27F89F8A71</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

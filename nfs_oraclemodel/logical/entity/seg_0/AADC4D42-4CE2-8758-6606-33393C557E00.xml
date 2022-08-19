@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AADC4D42-4CE2-8758-6606-33393C557E00" name="FIRE_EVENT">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:14:19 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="fire_id" id="812BCE2E-D6BD-1FD0-C1FB-ECBC7F5A6D31">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:14:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire id]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fire_name" id="683C1D73-B31C-CAD5-CA07-233A7654652B">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:14:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire name]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fire_long" id="348EA0A0-1372-C370-43E8-A381AC2996CD">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:14:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire longitude]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,8,5</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fire_lat" id="207847FD-FB1D-B193-CC26-E6C6F64A00B9">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:14:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire latitude]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,9,5</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fire_start_date" id="E524A65F-8FD2-DFBF-4F7B-E3E104432C36">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:14:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire start date]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fire_area_burnt" id="EAA4D0AF-6FE5-C3F8-ECBE-3CA50DB7195E">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:14:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire burnt area]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,8,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fire_sparked_by" id="B59E92F2-68E8-FE18-E8ED-02FF6497A324">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:21:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire id]]></commentInRDBMS>
+<generatorID>2ED5991A-E6D4-542B-594C-B90593C729F3</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>812BCE2E-D6BD-1FD0-C1FB-ECBC7F5A6D31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2CEA45B5-703E-1CFB-3117-15FD6DB769BE" name="FIRE_EVENT PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:14:52 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>812BCE2E-D6BD-1FD0-C1FB-ECBC7F5A6D31</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

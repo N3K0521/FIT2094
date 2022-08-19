@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86CDC211-064F-07B1-FDE1-CA4A371B415F" name="owner">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>C2BD56B8-723A-1E1C-FD8C-A5430A1F1BD1</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="owner_id" id="05DBE4FA-FE7D-F990-9E80-D0D2F012F96E">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[owner id]]></commentInRDBMS>
+<generatorID>6D9969F3-90D7-BB86-233B-73A05FACB120</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_name" id="71AFCB2E-2C03-E2F0-456F-4FBBA183F691">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[owner name]]></commentInRDBMS>
+<generatorID>3676AB54-742E-86C6-60D0-F53BDB503C0A</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_phone" id="C826983B-03EA-8EA7-3B35-59EB7FECD522">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[ owner phone]]></commentInRDBMS>
+<generatorID>D2EC709C-C99B-70FA-1C86-5B3D6E3858F8</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57455BC2-F078-9345-AC4C-A3C182DFAF8C" name="owner_PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>C2312FAB-25F5-88C9-A469-133406B552CA</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05DBE4FA-FE7D-F990-9E80-D0D2F012F96E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

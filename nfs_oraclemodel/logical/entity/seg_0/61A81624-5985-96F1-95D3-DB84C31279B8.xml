@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61A81624-5985-96F1-95D3-DB84C31279B8" name="FIRE_LGA">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:23:31 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lga_code" id="1EBA599C-6D60-AEDB-B992-B6EF0D2F0E15">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:23:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga code ]]></commentInRDBMS>
+<generatorID>30167181-957D-B733-6410-A92F88FC3C27</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<referedAttribute>E6A58137-37FB-3D4E-17FF-B2DD272CDE31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fire_id" id="4A57FC4B-A85C-03D3-D300-CEE0E65FF768">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:24:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire id]]></commentInRDBMS>
+<generatorID>795E00C8-0BE7-F743-E1C9-2298AA94289B</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<referedAttribute>812BCE2E-D6BD-1FD0-C1FB-ECBC7F5A6D31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8891BD2F-E8D4-9EDD-310C-D4E851F63E4D" name="FIRE_LGA PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:24:07 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1EBA599C-6D60-AEDB-B992-B6EF0D2F0E15</attributeRef>
+<attributeRef>4A57FC4B-A85C-03D3-D300-CEE0E65FF768</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

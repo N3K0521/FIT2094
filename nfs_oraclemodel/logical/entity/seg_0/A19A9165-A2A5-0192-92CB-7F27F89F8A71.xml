@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A19A9165-A2A5-0192-92CB-7F27F89F8A71" name="BUILDING_DAMAGE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:38:55 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bd_id" id="2C211A42-4556-9406-DB9C-5A010E7F73B5">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:53:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[building damage id (surrogate key)]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bd_lag_damage_cost" id="2FC474FC-953B-76F0-29C5-7C4C1A3312E0">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:39:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[building damage cost]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bd_lga_visit_date" id="1885FD77-E2CD-2F86-8622-51F050814A67">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:32:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga visit date]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bd_totally_destroyed" id="882E8FEE-A59F-C90E-0EAA-F98CFA98EF67">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:42:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[building damage Y or N]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<constraintName>bd_totally_damaged_cosntraint</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="NO"/>
+<valueDef value="Y" description="YES"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_id" id="97E409F1-24C9-C2C2-AD24-36752BD679E0">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:50:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[building id]]></commentInRDBMS>
+<generatorID>D6E58EDA-84CD-B0F3-BF71-57F00510E611</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<referedAttribute>394A5589-2624-89ED-D827-46F7F9E4D8D4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_id" id="FA284A67-7D42-F151-56DB-F5161FC42496">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:50:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[property id]]></commentInRDBMS>
+<generatorID>D6E58EDA-84CD-B0F3-BF71-57F00510E611</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<referedAttribute>CDCC4522-57AE-69D9-7635-4F14E0687817</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fire_id" id="F6285E00-E865-1F49-C4BF-6792CCBC931F">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:52:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire id]]></commentInRDBMS>
+<generatorID>D1DE28F5-84C2-E764-C50C-D8F3EC24AEFF</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<referedAttribute>812BCE2E-D6BD-1FD0-C1FB-ECBC7F5A6D31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bd_insurance_payout" id="D3EB55AB-5EE0-E02D-9894-B94EC9882680">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 10:11:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[insurance payout]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_assessor_id" id="0DBBCB96-F2BC-6EDB-5681-26EB57C2FEBE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:24:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor id]]></commentInRDBMS>
+<generatorID>0BDEC84A-5DC3-92A6-03BF-B88DEAA86741</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3D66C0A0-0DD4-A4C2-0657-CC2B69FD89F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="insurer_assessor_id" id="2ADC3D05-6C2E-6E90-3981-929D7920E119">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:29:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor id]]></commentInRDBMS>
+<generatorID>50CB3C95-F447-3C30-2CAE-3B90A30F3869</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3D66C0A0-0DD4-A4C2-0657-CC2B69FD89F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC2AC1A9-5512-814E-D61A-94F869A20AFB" name="BUILDING_DAMAGE PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:53:35 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2C211A42-4556-9406-DB9C-5A010E7F73B5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="39F2D24F-791D-20B2-52C3-7177EEBEA7B7" name="unqinue_constaint">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 08:54:18 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<newElementsIDs>97E409F1-24C9-C2C2-AD24-36752BD679E0,FA284A67-7D42-F151-56DB-F5161FC42496,F6285E00-E865-1F49-C4BF-6792CCBC931F</newElementsIDs>
+<usedAttributes>
+<attributeRef>97E409F1-24C9-C2C2-AD24-36752BD679E0</attributeRef>
+<attributeRef>FA284A67-7D42-F151-56DB-F5161FC42496</attributeRef>
+<attributeRef>F6285E00-E865-1F49-C4BF-6792CCBC931F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

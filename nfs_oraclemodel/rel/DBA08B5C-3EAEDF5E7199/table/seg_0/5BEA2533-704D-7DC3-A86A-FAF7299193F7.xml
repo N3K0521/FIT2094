@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5BEA2533-704D-7DC3-A86A-FAF7299193F7" name="ASSESSOR">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>6837C2F3-6ABD-40AA-3F4D-DD8F289F353C</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="assessor_id" id="BD8074C8-3D14-99B7-9EEB-88C80981DF05">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor id]]></commentInRDBMS>
+<generatorID>3D66C0A0-0DD4-A4C2-0657-CC2B69FD89F2</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assessor_gname" id="E056323A-F743-1831-3863-CE18E91F7E8E">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor gname]]></commentInRDBMS>
+<generatorID>46695554-B798-1F89-0D63-7A803B31B482</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assessor_fname" id="656444E8-12D2-F145-888E-EC7C6D930DE1">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor_fname]]></commentInRDBMS>
+<generatorID>FC3D2C4A-678D-A02B-1BB9-5A83C36E52D6</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assessor_type" id="BB9E91B7-D8E1-3A61-73C1-5F94912D07C2">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor type (lga or insurer)]]></commentInRDBMS>
+<generatorID>69867F74-A325-8AA8-03D0-418D2A909BD8</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<constraintName>assessor_type_cosntraint</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="insurer" description="insurer"/>
+<valueDef value="lga" description="lga"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSURER_insurer_code" id="E973CA0E-892A-1CBF-019E-D1BC5AA6F17A">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[insurance company id]]></commentInRDBMS>
+<generatorID>7C65EBC2-6BC7-E297-BDF1-C10ED2D086A4</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC7A55CB-DA2C-4105-6C43-E4E86E590341" referredColumn="4973AD22-DCD9-2788-9EB2-7BD789C442FC"/>
+</associations>
+</Column>
+<Column name="LGA_lga_code" id="1E0C0C8B-FAE2-618B-AEC0-06490A6497E2">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga code ]]></commentInRDBMS>
+<generatorID>0351178B-2E43-908B-93A3-FC85B5D2B1CE</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E051D51F-FD5F-751B-D546-DFFFF2335E96" referredColumn="67ED6E2E-64AA-D43D-33B7-2FD2BFBCDF8C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03573D04-03A4-BD27-5D94-E7FDE9981E7F" name="INSURER_ASSESSOR_PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>8BB575A0-005A-1BE4-9966-860540094925</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD8074C8-3D14-99B7-9EEB-88C80981DF05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8E766B2-B692-C88F-3318-6FDAEA8E388C" name="INSURER_ASSESSOR">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>605961EE-3080-53B8-6889-00D1BF4B0651</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E973CA0E-892A-1CBF-019E-D1BC5AA6F17A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16C09E80-5250-40A8-5CA0-192EBB65405F" name="lga_assessor">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>E2F92CFC-5E8B-04B5-9B20-C8D722EEB23A</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E0C0C8B-FAE2-618B-AEC0-06490A6497E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,245 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E28BB64-2922-AB96-0F3E-39A8ABE93DC3" name="BUILDING_DAMAGE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>A19A9165-A2A5-0192-92CB-7F27F89F8A71</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bd_id" id="7303BB97-7C8C-76B6-ADBA-B419FBBD42E5">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[building damage id (surrogate key)]]></commentInRDBMS>
+<generatorID>2C211A42-4556-9406-DB9C-5A010E7F73B5</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bd_lag_damage_cost" id="C416FBE6-B5D0-3EEC-FAEB-9DA093898820">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[building damage cost]]></commentInRDBMS>
+<generatorID>2FC474FC-953B-76F0-29C5-7C4C1A3312E0</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bd_lga_visit_date" id="C179F1F2-6652-D258-13D1-8FD486885287">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga visit date]]></commentInRDBMS>
+<generatorID>1885FD77-E2CD-2F86-8622-51F050814A67</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bd_totally_destroyed" id="D248A3B0-FE90-D0D9-1F84-7326D6CEBFB5">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[building damage Y or N]]></commentInRDBMS>
+<generatorID>882E8FEE-A59F-C90E-0EAA-F98CFA98EF67</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<constraintName>bd_totally_damaged_cosntraint</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="NO"/>
+<valueDef value="Y" description="YES"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUILDING_building_id" id="05B5F7CD-758A-D2EB-2F3F-2374CAA9F7BB">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[building id]]></commentInRDBMS>
+<generatorID>97E409F1-24C9-C2C2-AD24-36752BD679E0</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A6DAA20-B2A5-FBBB-2F59-170008027E53" referredColumn="2CD29643-BF46-A1B2-D791-AF8962432034"/>
+</associations>
+</Column>
+<Column name="BUILDING_property_id" id="9A9D6680-FEF2-28A1-5ED5-6097094C16A0">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[property id]]></commentInRDBMS>
+<generatorID>FA284A67-7D42-F151-56DB-F5161FC42496</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A6DAA20-B2A5-FBBB-2F59-170008027E53" referredColumn="CD2CB68B-6D1E-ECB3-782A-8B58F29F0435"/>
+</associations>
+</Column>
+<Column name="FIRE_EVENT_fire_id" id="4C3B4D0D-4930-7307-6899-102E9701ECD7">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire id]]></commentInRDBMS>
+<generatorID>F6285E00-E865-1F49-C4BF-6792CCBC931F</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CACBDEC-E94A-35EF-2E5E-E4330FAB1DA0" referredColumn="F9C6D3AA-F6E0-46B1-5B2B-BD35E5DFACC2"/>
+</associations>
+</Column>
+<Column name="bd_insurance_payout" id="AEB04C7C-7D4F-712F-4115-D01155E8ECE8">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[insurance payout]]></commentInRDBMS>
+<generatorID>D3EB55AB-5EE0-E02D-9894-B94EC9882680</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ASSESSOR_assessor_id" id="7ED3628B-6063-9797-1180-9096481457FE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor id]]></commentInRDBMS>
+<generatorID>0DBBCB96-F2BC-6EDB-5681-26EB57C2FEBE</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE0C6DCF-5FE4-0953-4786-74507937E99D" referredColumn="BD8074C8-3D14-99B7-9EEB-88C80981DF05"/>
+</associations>
+</Column>
+<Column name="ASSESSOR_assessor_id1" id="63D2D74D-4BD3-F50C-EAB1-6D01A1DC5157">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor id]]></commentInRDBMS>
+<generatorID>2ADC3D05-6C2E-6E90-3981-929D7920E119</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E853EC5F-5E9C-0E05-8FE3-051D088E474B" referredColumn="BD8074C8-3D14-99B7-9EEB-88C80981DF05"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E53DE700-5EF0-AD5C-00E6-0C86726B08A5" name="BUILDING_DAMAGE_PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>BC2AC1A9-5512-814E-D61A-94F869A20AFB</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7303BB97-7C8C-76B6-ADBA-B419FBBD42E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9F1C8EC-8C8D-FF19-CF52-389C18345557" name="unqinue_constaint">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>39F2D24F-791D-20B2-52C3-7177EEBEA7B7</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05B5F7CD-758A-D2EB-2F3F-2374CAA9F7BB"/>
+<colUsage columnID="9A9D6680-FEF2-28A1-5ED5-6097094C16A0"/>
+<colUsage columnID="4C3B4D0D-4930-7307-6899-102E9701ECD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A9E98EA-317A-022B-928F-29CDE0077036" name="assessor_bd">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>0BDEC84A-5DC3-92A6-03BF-B88DEAA86741</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7ED3628B-6063-9797-1180-9096481457FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B22A0D6-04CE-8CB8-BE86-7EEAC6B704EF" name="building_damage">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>D6E58EDA-84CD-B0F3-BF71-57F00510E611</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05B5F7CD-758A-D2EB-2F3F-2374CAA9F7BB"/>
+<colUsage columnID="9A9D6680-FEF2-28A1-5ED5-6097094C16A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44E6F32A-2BCC-0C52-883E-6CCB6311E1AE" name="fire_damage">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>D1DE28F5-84C2-E764-C50C-D8F3EC24AEFF</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C3B4D0D-4930-7307-6899-102E9701ECD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E1A94A7-4C96-457A-7BA4-39DD9094BBE3" name="insurer_assessor_bd">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>50CB3C95-F447-3C30-2CAE-3B90A30F3869</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63D2D74D-4BD3-F50C-EAB1-6D01A1DC5157"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

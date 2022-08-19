@@ -1,0 +1,148 @@
+SQL> 
+SQL> -- DROP TABLE
+SQL> DROP TABLE employee;
+
+Error starting at line : 8 in command -
+DROP TABLE employee
+Error report -
+ORA-02449: unique/primary keys in table referenced by foreign keys
+02449. 00000 -  "unique/primary keys in table referenced by foreign keys"
+*Cause:    An attempt was made to drop a table with unique or
+           primary keys referenced by foreign keys in another table.
+*Action:   Before performing the above operations the table, drop the
+           foreign key constraints in other tables. You can see what
+           constraints are referencing a table by issuing the following
+           command:
+           SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME = "tabnam";
+SQL> DROP TABLE team;
+
+Error starting at line : 9 in command -
+DROP TABLE team
+Error report -
+ORA-02449: unique/primary keys in table referenced by foreign keys
+02449. 00000 -  "unique/primary keys in table referenced by foreign keys"
+*Cause:    An attempt was made to drop a table with unique or
+           primary keys referenced by foreign keys in another table.
+*Action:   Before performing the above operations the table, drop the
+           foreign key constraints in other tables. You can see what
+           constraints are referencing a table by issuing the following
+           command:
+           SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME = "tabnam";
+SQL> 
+SQL> CREATE TABLE employee (
+  2      emp_no      NUMBER(5) NOT NULL,
+  3      emp_fname   VARCHAR2(30),
+  4      emp_lname   VARCHAR2(30),
+  5      emp_street  VARCHAR2(50) NOT NULL,
+  6      emp_town    VARCHAR2(30) NOT NULL,
+  7      emp_pcode   CHAR(4) NOT NULL,
+  8      emp_dob     DATE NOT NULL,
+  9      emp_taxno   VARCHAR2(20),
+ 10      team_no     NUMBER(3),
+ 11      mentor_no   NUMBER(5)
+ 12  );
+
+Error starting at line : 11 in command -
+CREATE TABLE employee (
+    emp_no      NUMBER(5) NOT NULL,
+    emp_fname   VARCHAR2(30),
+    emp_lname   VARCHAR2(30),
+    emp_street  VARCHAR2(50) NOT NULL,
+    emp_town    VARCHAR2(30) NOT NULL,
+    emp_pcode   CHAR(4) NOT NULL,
+    emp_dob     DATE NOT NULL,
+    emp_taxno   VARCHAR2(20),
+    team_no     NUMBER(3),
+    mentor_no   NUMBER(5)
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+SQL> 
+SQL> ALTER TABLE employee ADD CONSTRAINT employee_pk PRIMARY KEY(emp_no);
+
+Error starting at line : 24 in command -
+ALTER TABLE employee ADD CONSTRAINT employee_pk PRIMARY KEY(emp_no)
+Error report -
+ORA-02260: table can have only one primary key
+02260. 00000 -  "table can have only one primary key"
+*Cause:    Self-evident.
+*Action:   Remove the extra primary key.
+SQL> 
+SQL> CREATE TABLE team(
+  2      team_no     NUMBER(3) NOT NULL,
+  3      emp_no      NUMBER(5)
+  4  );
+
+Error starting at line : 26 in command -
+CREATE TABLE team(
+    team_no     NUMBER(3) NOT NULL,
+    emp_no      NUMBER(5)
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+SQL> 
+SQL> ALTER TABLE team ADD CONSTRAINT team_pk PRIMARY KEY (team_no);
+
+Error starting at line : 31 in command -
+ALTER TABLE team ADD CONSTRAINT team_pk PRIMARY KEY (team_no)
+Error report -
+ORA-02260: table can have only one primary key
+02260. 00000 -  "table can have only one primary key"
+*Cause:    Self-evident.
+*Action:   Remove the extra primary key.
+SQL> 
+SQL> ALTER TABLE employee
+  2      ADD CONSTRAINT emp_mentors_emp FOREIGN KEY(mentor_no)
+  3          REFERENCES employee (emp_no)
+  4              ON DELETE SET NULL;
+
+Error starting at line : 33 in command -
+ALTER TABLE employee
+    ADD CONSTRAINT emp_mentors_emp FOREIGN KEY(mentor_no)
+        REFERENCES employee (emp_no)
+            ON DELETE SET NULL
+Error report -
+ORA-02275: such a referential constraint already exists in the table
+02275. 00000 -  "such a referential constraint already exists in the table"
+*Cause:    Self-evident.
+*Action:   Remove the extra constraint.
+SQL> 
+SQL> ALTER TABLE employee
+  2      ADD CONSTRAINT team_has_employee FOREIGN KEY (team_no)
+  3          REFERENCES team (team_no)
+  4              ON DELETE SET NULL;
+
+Error starting at line : 38 in command -
+ALTER TABLE employee
+    ADD CONSTRAINT team_has_employee FOREIGN KEY (team_no)
+        REFERENCES team (team_no)
+            ON DELETE SET NULL
+Error report -
+ORA-02275: such a referential constraint already exists in the table
+02275. 00000 -  "such a referential constraint already exists in the table"
+*Cause:    Self-evident.
+*Action:   Remove the extra constraint.
+SQL> 
+SQL> ALTER TABLE team
+  2      ADD CONSTRAINT emp_leads_team FOREIGN KEY (emp_no)
+  3          REFERENCES employee (emp_no)
+  4              ON DELETE SET NULL;
+
+Error starting at line : 43 in command -
+ALTER TABLE team
+    ADD CONSTRAINT emp_leads_team FOREIGN KEY (emp_no)
+        REFERENCES employee (emp_no)
+            ON DELETE SET NULL
+Error report -
+ORA-02275: such a referential constraint already exists in the table
+02275. 00000 -  "such a referential constraint already exists in the table"
+*Cause:    Self-evident.
+*Action:   Remove the extra constraint.
+SQL> 
+SQL> SPOOL off

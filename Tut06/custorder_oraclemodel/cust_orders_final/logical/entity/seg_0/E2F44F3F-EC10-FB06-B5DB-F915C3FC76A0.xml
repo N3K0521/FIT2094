@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2F44F3F-EC10-FB06-B5DB-F915C3FC76A0" name="PRODUCT">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 19:02:01 UTC</createdTime>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="prod_no" id="5EDC29FA-ECEC-2DC3-3EF2-C3BE45263BD8">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 19:02:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[product number]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_desc" id="2D510070-30F9-AD76-A81D-E1C3E243CC6B">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 19:02:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_unitprice" id="49FBD3BB-0237-967C-7D37-51212BB8FB33">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 19:11:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[product unit price]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_category" id="149DEF6D-66FD-F066-55BE-A2D025544A12">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 19:12:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[product category]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pcat_id" id="D50D6251-D324-C485-9BA9-410C15FE86A4">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 19:46:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[product category id]]></commentInRDBMS>
+<generatorID>F9517B3C-A330-B430-15F6-05D7C04DBD00</generatorID>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<referedAttribute>71CADD52-581C-05BF-C081-EED2B9D157A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2115F06-6B0E-AD11-275D-79FD6DDDC544" name="PRODUCT PK">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 19:02:44 UTC</createdTime>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5EDC29FA-ECEC-2DC3-3EF2-C3BE45263BD8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

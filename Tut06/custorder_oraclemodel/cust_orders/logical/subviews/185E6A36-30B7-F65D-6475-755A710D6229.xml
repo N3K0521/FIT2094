@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="185E6A36-30B7-F65D-6475-755A710D6229">
+<createdBy>Nek0</createdBy>
+<modifiedBy>Nek0</modifiedBy>
+<createdTime>2022-01-23 15:25:55 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>true</showLegend>
+<showLabels>true</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>2</notation>
+<showAllDetails>false</showAllDetails>
+<showElements>true</showElements>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="33FD70FE-63C7-14F4-C6CB-422B02B0A184" otype="Entity" vid="96811530-7969-6AF0-BE0C-31F5C7D213EE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="311" y="149" width="181" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVLegend" oid="BE7D3342-1246-B0D8-F993-E95B19FC93FD" otype="Legend" vid="04D734B5-7920-A34A-A19B-81DCD87E09DD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="10" y="10" width="232" height="135"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D9157A11-12A1-181A-5064-50B002F705C7" otype="Entity" vid="A7885BB7-5B80-E0CE-18C2-DBD45490FA02">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="535" y="147" width="170" height="110"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="A402DA3A-100C-0A7F-D96E-19F734CFE329" otype="Relation" vid_source="96811530-7969-6AF0-BE0C-31F5C7D213EE" vid_target="A7885BB7-5B80-E0CE-18C2-DBD45490FA02">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="492" y="203"/>
+<point x="535" y="203"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

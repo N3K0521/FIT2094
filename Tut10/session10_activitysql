@@ -1,0 +1,14 @@
+SELECT
+    uni.student.studfname,
+    uni.student.studlname,
+    uni.enrolment.mark
+FROM
+         uni.student
+    INNER JOIN uni.enrolment
+    ON uni.student.studid = uni.enrolment.studid
+WHERE
+    uni.enrolment.mark BETWEEN 60 AND 70
+ORDER BY
+    uni.student.studfname,
+    uni.student.studlname,
+    uni.enrolment.mark

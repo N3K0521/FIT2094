@@ -1,0 +1,49 @@
+-- student id: 31552544
+-- student name: Huixin Wang
+-- Capture run of script in file called monsoftware_schm_output.txt
+set echo on
+SPOOL monsoftware_schm_output.txt
+
+-- DROP TABLE
+DROP TABLE employee;
+DROP TABLE team;
+
+CREATE TABLE employee (
+    emp_no      NUMBER(5) NOT NULL,
+    emp_fname   VARCHAR2(30),
+    emp_lname   VARCHAR2(30),
+    emp_street  VARCHAR2(50) NOT NULL,
+    emp_town    VARCHAR2(30) NOT NULL,
+    emp_pcode   CHAR(4) NOT NULL,
+    emp_dob     DATE NOT NULL,
+    emp_taxno   VARCHAR2(20),
+    team_no     NUMBER(3),
+    mentor_no   NUMBER(5)
+);
+
+ALTER TABLE employee ADD CONSTRAINT employee_pk PRIMARY KEY(emp_no);
+
+CREATE TABLE team(
+    team_no     NUMBER(3) NOT NULL,
+    emp_no      NUMBER(5)
+);
+
+ALTER TABLE team ADD CONSTRAINT team_pk PRIMARY KEY (team_no);
+
+ALTER TABLE employee
+    ADD CONSTRAINT emp_mentors_emp FOREIGN KEY(mentor_no)
+        REFERENCES employee (emp_no)
+            ON DELETE SET NULL;
+
+ALTER TABLE employee
+    ADD CONSTRAINT team_has_employee FOREIGN KEY (team_no)
+        REFERENCES team (team_no)
+            ON DELETE SET NULL;
+            
+ALTER TABLE team
+    ADD CONSTRAINT emp_leads_team FOREIGN KEY (emp_no)
+        REFERENCES employee (emp_no)
+            ON DELETE SET NULL;
+            
+SPOOL off
+set echo off

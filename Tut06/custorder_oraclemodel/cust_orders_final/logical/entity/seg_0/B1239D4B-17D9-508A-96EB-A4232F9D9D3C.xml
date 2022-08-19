@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1239D4B-17D9-508A-96EB-A4232F9D9D3C" name="CUSTOMER">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 18:55:26 UTC</createdTime>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cust_no" id="DB401D5F-806A-643E-7295-CC927E6FFD81">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 18:55:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer number]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_name" id="D7EE85A6-74A2-4313-0401-6862982DE370">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 18:56:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer name]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custo_address" id="AF81709D-07FC-E9B4-B33E-7A238555F1B1">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 18:56:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer address]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_phone" id="35534E6C-B85E-A87D-4EDF-609E69CA7D63">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 18:57:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer phone]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_level" id="0915B1FB-A50F-72AB-E7AA-A0A355C6E104">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 19:15:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer level, G-Gold, S-Silver, B-Bronze]]></commentInRDBMS>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<constraintName>chk_custlevel</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BBF61228-4A26-C588-387F-DB344B68B9B5" name="CUSTOMER PK">
+<createdBy>Nek0</createdBy>
+<createdTime>2022-01-23 18:56:12 UTC</createdTime>
+<ownerDesignName>cust_orders_final</ownerDesignName>
+<engineerTo>
+<item key="5645BA0A-6996-05E6-B137-6E0964027093" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DB401D5F-806A-643E-7295-CC927E6FFD81</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

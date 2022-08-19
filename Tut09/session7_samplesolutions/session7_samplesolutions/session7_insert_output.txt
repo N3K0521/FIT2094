@@ -1,0 +1,874 @@
+SQL> 
+SQL> /*
+SQL>Databases Session 7 Tutorial Sample Solution
+SQL>session7_insert.sql
+SQL>
+SQL>Databases units
+SQL>Author: FIT Database Teaching Team
+SQL>License: Copyright © Monash University, unless otherwise stated. All Rights Reserved.
+SQL>COPYRIGHT WARNING
+SQL>Warning
+SQL>This material is protected by copyright. For use within Monash University only. NOT FOR RESALE.
+SQL>Do not remove this notice. 
+SQL>*/
+SQL> 
+SQL> -- 7.3.1
+SQL> -- Basic INSERT statement
+SQL> -- ================================================================
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      11111111,
+  3      'Bloggs',
+  4      'Fred',
+  5      '01-Jan-2003'
+  6  );
+
+Error starting at line : 22 in command -
+INSERT INTO student VALUES (
+    11111111,
+    'Bloggs',
+    'Fred',
+    '01-Jan-2003'
+)
+Error at Command Line : 22 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      11111112,
+  3      'Nice',
+  4      'Nick',
+  5      '10-Oct-2004'
+  6  );
+
+Error starting at line : 29 in command -
+INSERT INTO student VALUES (
+    11111112,
+    'Nice',
+    'Nick',
+    '10-Oct-2004'
+)
+Error at Command Line : 29 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      11111113,
+  3      'Wheat',
+  4      'Wendy',
+  5      '05-May-2005'
+  6  );
+
+Error starting at line : 36 in command -
+INSERT INTO student VALUES (
+    11111113,
+    'Wheat',
+    'Wendy',
+    '05-May-2005'
+)
+Error at Command Line : 36 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      11111114,
+  3      'Sheen',
+  4      'Cindy',
+  5      '25-Dec-2004'
+  6  );
+
+Error starting at line : 43 in command -
+INSERT INTO student VALUES (
+    11111114,
+    'Sheen',
+    'Cindy',
+    '25-Dec-2004'
+)
+Error at Command Line : 43 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO unit VALUES (
+  2      'FIT9999',
+  3      'FIT Last Unit'
+  4  );
+
+Error starting at line : 50 in command -
+INSERT INTO unit VALUES (
+    'FIT9999',
+    'FIT Last Unit'
+)
+Error at Command Line : 50 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO unit VALUES (
+  2      'FIT9132',
+  3      'Introduction to Databases'
+  4  );
+
+Error starting at line : 55 in command -
+INSERT INTO unit VALUES (
+    'FIT9132',
+    'Introduction to Databases'
+)
+Error at Command Line : 55 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO unit VALUES (
+  2      'FIT9161',
+  3      'Project'
+  4  );
+
+Error starting at line : 60 in command -
+INSERT INTO unit VALUES (
+    'FIT9161',
+    'Project'
+)
+Error at Command Line : 60 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO unit VALUES (
+  2      'FIT5111',
+  3      'Student''s Life'
+  4  );
+
+Error starting at line : 65 in command -
+INSERT INTO unit VALUES (
+    'FIT5111',
+    'Student''s Life'
+)
+Error at Command Line : 65 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+SQL> 
+SQL> 
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT9132',
+  4      2020,
+  5      '1',
+  6      35,
+  7      'N'
+  8  );
+
+Error starting at line : 72 in command -
+INSERT INTO enrolment VALUES (
+    11111111,
+    'FIT9132',
+    2020,
+    '1',
+    35,
+    'N'
+)
+Error at Command Line : 72 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT9161',
+  4      2020,
+  5      '1',
+  6      61,
+  7      'C'
+  8  );
+
+Error starting at line : 81 in command -
+INSERT INTO enrolment VALUES (
+    11111111,
+    'FIT9161',
+    2020,
+    '1',
+    61,
+    'C'
+)
+Error at Command Line : 81 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT9132',
+  4      2020,
+  5      '2',
+  6      42,
+  7      'N'
+  8  );
+
+Error starting at line : 90 in command -
+INSERT INTO enrolment VALUES (
+    11111111,
+    'FIT9132',
+    2020,
+    '2',
+    42,
+    'N'
+)
+Error at Command Line : 90 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT5111',
+  4      2020,
+  5      '2',
+  6      76,
+  7      'D'
+  8  );
+
+Error starting at line : 99 in command -
+INSERT INTO enrolment VALUES (
+    11111111,
+    'FIT5111',
+    2020,
+    '2',
+    76,
+    'D'
+)
+Error at Command Line : 99 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT9132',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+Error starting at line : 108 in command -
+INSERT INTO enrolment VALUES (
+    11111111,
+    'FIT9132',
+    2021,
+    '1',
+    NULL,
+    NULL
+)
+Error at Command Line : 108 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111112,
+  3      'FIT9132',
+  4      2020,
+  5      '2',
+  6      83,
+  7      'HD'
+  8  );
+
+Error starting at line : 117 in command -
+INSERT INTO enrolment VALUES (
+    11111112,
+    'FIT9132',
+    2020,
+    '2',
+    83,
+    'HD'
+)
+Error at Command Line : 117 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111112,
+  3      'FIT9161',
+  4      2020,
+  5      '2',
+  6      79,
+  7      'D'
+  8  );
+
+Error starting at line : 126 in command -
+INSERT INTO enrolment VALUES (
+    11111112,
+    'FIT9161',
+    2020,
+    '2',
+    79,
+    'D'
+)
+Error at Command Line : 126 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111113,
+  3      'FIT9132',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+Error starting at line : 135 in command -
+INSERT INTO enrolment VALUES (
+    11111113,
+    'FIT9132',
+    2021,
+    '1',
+    NULL,
+    NULL
+)
+Error at Command Line : 135 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111113,
+  3      'FIT5111',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+Error starting at line : 144 in command -
+INSERT INTO enrolment VALUES (
+    11111113,
+    'FIT5111',
+    2021,
+    '1',
+    NULL,
+    NULL
+)
+Error at Command Line : 144 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> /*
+SQL>  A different approach to inserting is illustrated below by using a list of
+SQL>  the attributes you which to insert, any not listed will be made null.
+SQL>
+SQL>  This approach is also useful if the data you have contains the attributes in a
+SQL>  different order (for example you are working with data from another source) - the
+SQL>  attributes are simply listed in the order they appear in the data itself
+SQL>
+SQL>*/
+SQL> 
+SQL> INSERT INTO enrolment (stu_nbr, unit_code, enrol_year, enrol_semester) VALUES (
+  2      11111114,
+  3      'FIT9132',
+  4      2021,
+  5      '1'
+  6  );
+
+Error starting at line : 163 in command -
+INSERT INTO enrolment (stu_nbr, unit_code, enrol_year, enrol_semester) VALUES (
+    11111114,
+    'FIT9132',
+    2021,
+    '1'
+)
+Error at Command Line : 163 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> INSERT INTO enrolment (stu_nbr, unit_code, enrol_year, enrol_semester) VALUES (
+  2      11111114,
+  3      'FIT5111',
+  4      2021,
+  5      '1'
+  6  );
+
+Error starting at line : 169 in command -
+INSERT INTO enrolment (stu_nbr, unit_code, enrol_year, enrol_semester) VALUES (
+    11111114,
+    'FIT5111',
+    2021,
+    '1'
+)
+Error at Command Line : 169 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> 
+SQL> -- 7.3.2
+SQL> -- Using seqeunces for INSERT
+SQL> -- ================================================================
+SQL> -- Create sequence
+SQL> DROP SEQUENCE student_seq;
+
+Sequence STUDENT_SEQ dropped.
+
+SQL> 
+SQL> CREATE SEQUENCE student_seq START WITH 11111115 INCREMENT BY 1;
+
+Sequence STUDENT_SEQ created.
+
+SQL> 
+SQL> SELECT
+  2      *
+  3  FROM
+  4      cat;
+
+TABLE_NAME                                                                                                                       TABLE_TYPE 
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+STUDENT_SEQ                                                                                                                      SEQUENCE   
+BIN$1t2al5+4KlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+DKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+GKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+OKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+UKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+dKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+oKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+wKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/2KlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/8KlzgU68YwoKgoA==$0                                                                                                   TABLE      
+
+TABLE_NAME                                                                                                                       TABLE_TYPE 
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+BIN$1t2al5/AKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/KKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/TKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/YKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/eKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/pKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/wKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al6AEKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al6AJKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al6AUKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al6AZKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+
+TABLE_NAME                                                                                                                       TABLE_TYPE 
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+BIN$1t2al6AdKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+UNIT                                                                                                                             TABLE      
+
+24 rows selected. 
+
+SQL> -- cat refers to your Oracle catalogue, the objects which you own
+SQL> 
+SQL> -- Insert Mickey Mouse
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      student_seq.NEXTVAL,
+  3      'Mouse',
+  4      'Mickey',
+  5      '03-Feb-2004'
+  6  );
+
+Error starting at line : 194 in command -
+INSERT INTO student VALUES (
+    student_seq.NEXTVAL,
+    'Mouse',
+    'Mickey',
+    '03-Feb-2004'
+)
+Error at Command Line : 194 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> SELECT
+  2      *
+  3  FROM
+  4      student;
+
+Error starting at line : 201 in command -
+SELECT
+    *
+FROM
+    student
+Error at Command Line : 204 Column : 5
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> -- Add an enrolment
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      student_seq.CURRVAL,
+  3      'FIT9132',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+Error starting at line : 208 in command -
+INSERT INTO enrolment VALUES (
+    student_seq.CURRVAL,
+    'FIT9132',
+    2021,
+    '1',
+    NULL,
+    NULL
+)
+Error at Command Line : 208 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> 
+SQL> SELECT
+  2      *
+  3  FROM
+  4      enrolment;
+
+Error starting at line : 219 in command -
+SELECT
+    *
+FROM
+    enrolment
+Error at Command Line : 222 Column : 5
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> -- 7.3.3
+SQL> -- Advanced Insert
+SQL> -- ================================================================
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      student_seq.NEXTVAL,
+  3      'Last',
+  4      'First',
+  5      '01-Jan-2005'
+  6  );
+
+Error starting at line : 228 in command -
+INSERT INTO student VALUES (
+    student_seq.NEXTVAL,
+    'Last',
+    'First',
+    '01-Jan-2005'
+)
+Error at Command Line : 228 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      student_seq.CURRVAL,
+  3      (
+  4          SELECT
+  5              unit_code
+  6          FROM
+  7              unit
+  8          WHERE
+  9              unit_name = 'Introduction to Databases'
+ 10      ),
+ 11      2021,
+ 12      '1',
+ 13      NULL,
+ 14      NULL
+ 15  );
+
+Error starting at line : 235 in command -
+INSERT INTO enrolment VALUES (
+    student_seq.CURRVAL,
+    (
+        SELECT
+            unit_code
+        FROM
+            unit
+        WHERE
+            unit_name = 'Introduction to Databases'
+    ),
+    2021,
+    '1',
+    NULL,
+    NULL
+)
+Error at Command Line : 235 Column : 13
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> 
+SQL> SELECT
+  2      *
+  3  FROM
+  4      student;
+
+Error starting at line : 253 in command -
+SELECT
+    *
+FROM
+    student
+Error at Command Line : 256 Column : 5
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> SELECT
+  2      *
+  3  FROM
+  4      enrolment;
+
+Error starting at line : 258 in command -
+SELECT
+    *
+FROM
+    enrolment
+Error at Command Line : 261 Column : 5
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> -- 7.3.4
+SQL> -- Create table and Insert data from a single SQL statement
+SQL> -- ================================================================
+SQL> 
+SQL> DROP TABLE fit5111_student;
+
+Error starting at line : 267 in command -
+DROP TABLE fit5111_student
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> CREATE TABLE fit5111_student
+  2      AS
+  3          SELECT
+  4              *
+  5          FROM
+  6              enrolment
+  7          WHERE
+  8              unit_code = 'FIT5111';
+
+Error starting at line : 269 in command -
+CREATE TABLE fit5111_student
+    AS
+        SELECT
+            *
+        FROM
+            enrolment
+        WHERE
+            unit_code = 'FIT5111'
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMENT ON COLUMN fit5111_student.stu_nbr IS
+  2      'Student number';
+
+Error starting at line : 278 in command -
+COMMENT ON COLUMN fit5111_student.stu_nbr IS
+    'Student number'
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMENT ON COLUMN fit5111_student.unit_code IS
+  2      'Unit code';
+
+Error starting at line : 281 in command -
+COMMENT ON COLUMN fit5111_student.unit_code IS
+    'Unit code'
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMENT ON COLUMN fit5111_student.enrol_year IS
+  2      'Enrolment year';
+
+Error starting at line : 284 in command -
+COMMENT ON COLUMN fit5111_student.enrol_year IS
+    'Enrolment year'
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMENT ON COLUMN fit5111_student.enrol_semester IS
+  2      'Enrolment semester';
+
+Error starting at line : 287 in command -
+COMMENT ON COLUMN fit5111_student.enrol_semester IS
+    'Enrolment semester'
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMENT ON COLUMN fit5111_student.enrol_mark IS
+  2      'Enrolment mark (real)';
+
+Error starting at line : 290 in command -
+COMMENT ON COLUMN fit5111_student.enrol_mark IS
+    'Enrolment mark (real)'
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> COMMENT ON COLUMN fit5111_student.enrol_grade IS
+  2      'Enrolment grade (letter)';
+
+Error starting at line : 293 in command -
+COMMENT ON COLUMN fit5111_student.enrol_grade IS
+    'Enrolment grade (letter)'
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> --Check if the table exist
+SQL> 
+SQL> SELECT
+  2      *
+  3  FROM
+  4      cat;
+
+TABLE_NAME                                                                                                                       TABLE_TYPE 
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+STUDENT_SEQ                                                                                                                      SEQUENCE   
+BIN$1t2al5+4KlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+DKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+GKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+OKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+UKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+dKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+oKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5+wKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/2KlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/8KlzgU68YwoKgoA==$0                                                                                                   TABLE      
+
+TABLE_NAME                                                                                                                       TABLE_TYPE 
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+BIN$1t2al5/AKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/KKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/TKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/YKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/eKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/pKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al5/wKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al6AEKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al6AJKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al6AUKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+BIN$1t2al6AZKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+
+TABLE_NAME                                                                                                                       TABLE_TYPE 
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+BIN$1t2al6AdKlzgU68YwoKgoA==$0                                                                                                   TABLE      
+UNIT                                                                                                                             TABLE      
+
+24 rows selected. 
+
+SQL> 
+SQL> --List the contents of the table
+SQL> 
+SQL> SELECT
+  2      *
+  3  FROM
+  4      fit5111_student;
+
+Error starting at line : 305 in command -
+SELECT
+    *
+FROM
+    fit5111_student
+Error at Command Line : 308 Column : 5
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> SPOOL OFF

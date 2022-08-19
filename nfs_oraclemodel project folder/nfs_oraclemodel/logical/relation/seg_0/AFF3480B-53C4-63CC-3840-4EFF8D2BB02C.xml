@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BD_ASSESSOR_VISIT" directorySegmentName="seg_0" id="AFF3480B-53C4-63CC-3840-4EFF8D2BB02C">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:36:57 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<sourcePk>BC2AC1A9-5512-814E-D61A-94F869A20AFB</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>visits</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A19A9165-A2A5-0192-92CB-7F27F89F8A71</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4271ABFC-BD5D-7B4C-DA9E-808D0720FEFF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

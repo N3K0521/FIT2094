@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="lga_assessor" directorySegmentName="seg_0" id="E2F92CFC-5E8B-04B5-9B20-C8D722EEB23A">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:39:57 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<sourcePk>7ADD62AD-8DB5-077D-BE10-B43B0C27917C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DD006BBC-1802-B9B4-33DB-7E826BFAFBD8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6837C2F3-6ABD-40AA-3F4D-DD8F289F353C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

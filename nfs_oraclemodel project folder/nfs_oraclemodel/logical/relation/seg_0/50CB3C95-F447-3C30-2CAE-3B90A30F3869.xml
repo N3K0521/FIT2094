@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="insurer_assessor_bd" directorySegmentName="seg_0" id="50CB3C95-F447-3C30-2CAE-3B90A30F3869">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:29:51 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<sourcePk>8BB575A0-005A-1BE4-9966-860540094925</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>insurer_assess</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6837C2F3-6ABD-40AA-3F4D-DD8F289F353C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A19A9165-A2A5-0192-92CB-7F27F89F8A71</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

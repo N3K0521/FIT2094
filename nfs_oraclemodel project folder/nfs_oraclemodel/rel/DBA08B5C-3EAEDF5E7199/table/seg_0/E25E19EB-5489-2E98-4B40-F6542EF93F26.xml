@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E25E19EB-5489-2E98-4B40-F6542EF93F26" name="BUILDING_INSURANCE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>70DA0F4C-34CA-DED4-4A2E-9AE7DC5E344B</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="insurance_start_date" id="7DB36A04-162A-E2B7-2C38-235AFB1D4026">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[insurance start date]]></commentInRDBMS>
+<generatorID>E8019B99-C07F-C4D7-46FE-C8093165313C</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSURER_insurer_code" id="87217ABD-7081-B90C-9832-E668106D7521">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[insurance company id]]></commentInRDBMS>
+<generatorID>5AD1E3E1-A0D0-C6AE-94CC-9948A825B7CC</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C4E51AE-1DA4-2013-2901-4571799B1E99" referredColumn="4973AD22-DCD9-2788-9EB2-7BD789C442FC"/>
+</associations>
+</Column>
+<Column name="BUILDING_property_id" id="7CA9DAD5-1FBC-6B7A-2108-29EE1F84C537">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[property id]]></commentInRDBMS>
+<generatorID>32BA7B86-59BF-5504-69A6-8E81D8304CD6</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B5D83D0-25F4-EED8-6B3C-D69E2C666B2B" referredColumn="CD2CB68B-6D1E-ECB3-782A-8B58F29F0435"/>
+</associations>
+</Column>
+<Column name="BUILDING_building_id" id="779960D0-F367-0AAB-A3D7-581B80196D3E">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[building id]]></commentInRDBMS>
+<generatorID>A3FEC3B8-45A0-8C31-B3AD-EE6ED74DBB91</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B5D83D0-25F4-EED8-6B3C-D69E2C666B2B" referredColumn="2CD29643-BF46-A1B2-D791-AF8962432034"/>
+</associations>
+</Column>
+<Column name="insurance_end_date" id="5D1B5D49-CF51-40C6-AFF5-E0D0CE57C5E6">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[insurance end date]]></commentInRDBMS>
+<generatorID>BEB7D60E-9B54-A648-22D2-4FB2A412A3BD</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="741C0DEE-8EC5-88C8-539C-0881A5459869" name="BUILDING_INSURANCE_PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>964968CF-FA29-BD3C-65F2-FCC9229A1CFF</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DB36A04-162A-E2B7-2C38-235AFB1D4026"/>
+<colUsage columnID="87217ABD-7081-B90C-9832-E668106D7521"/>
+<colUsage columnID="779960D0-F367-0AAB-A3D7-581B80196D3E"/>
+<colUsage columnID="7CA9DAD5-1FBC-6B7A-2108-29EE1F84C537"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D455FC15-F8FD-269E-2C14-54C39CC91546" name="building_insurance">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>1D6A3F4A-2DA3-3515-AAB0-45D1C597C463</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="779960D0-F367-0AAB-A3D7-581B80196D3E"/>
+<colUsage columnID="7CA9DAD5-1FBC-6B7A-2108-29EE1F84C537"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA19E710-5CAD-6DC3-1014-B17A06E1EF22" name="insurer_insurance">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>1C4A1D97-01ED-4C1E-70D8-BCC377C7AAA6</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87217ABD-7081-B90C-9832-E668106D7521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

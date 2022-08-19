@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6837C2F3-6ABD-40AA-3F4D-DD8F289F353C" name="ASSESSOR">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:08:20 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="assessor_id" id="3D66C0A0-0DD4-A4C2-0657-CC2B69FD89F2">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:09:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor id]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessor_gname" id="46695554-B798-1F89-0D63-7A803B31B482">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:11:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor gname]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessor_fname" id="FC3D2C4A-678D-A02B-1BB9-5A83C36E52D6">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:14:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor_fname]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessor_type" id="69867F74-A325-8AA8-03D0-418D2A909BD8">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:11:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessor type (lga or insurer)]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<constraintName>assessor_type_cosntraint</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="insurer" description="insurer"/>
+<valueDef value="lga" description="lga"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="insurer_code" id="7C65EBC2-6BC7-E297-BDF1-C10ED2D086A4">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:38:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[insurance company id]]></commentInRDBMS>
+<generatorID>605961EE-3080-53B8-6889-00D1BF4B0651</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DE445B9C-117C-BFF7-140F-7E27EC37777F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_code" id="0351178B-2E43-908B-93A3-FC85B5D2B1CE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:39:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga code ]]></commentInRDBMS>
+<generatorID>E2F92CFC-5E8B-04B5-9B20-C8D722EEB23A</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E6A58137-37FB-3D4E-17FF-B2DD272CDE31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8BB575A0-005A-1BE4-9966-860540094925" name="INSURER_ASSESSOR PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:11:00 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3D66C0A0-0DD4-A4C2-0657-CC2B69FD89F2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

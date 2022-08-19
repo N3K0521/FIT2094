@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E853EC5F-5E9C-0E05-8FE3-051D088E474B" containerWithKeyObject="7E28BB64-2922-AB96-0F3E-39A8ABE93DC3" localFKIndex="0E1A94A7-4C96-457A-7BA4-39DD9094BBE3" name="insurer_assessor_bd">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>50CB3C95-F447-3C30-2CAE-3B90A30F3869</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<referredTableLongName>ASSESSOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5BEA2533-704D-7DC3-A86A-FAF7299193F7</referredTableID>
+<keyObject>03573D04-03A4-BD27-5D94-E7FDE9981E7F</keyObject>
+<referredKeyID>03573D04-03A4-BD27-5D94-E7FDE9981E7F</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>assessor_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

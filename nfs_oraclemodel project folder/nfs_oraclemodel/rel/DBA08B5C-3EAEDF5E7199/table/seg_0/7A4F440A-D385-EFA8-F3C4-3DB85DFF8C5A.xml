@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A4F440A-D385-EFA8-F3C4-3DB85DFF8C5A" name="FIRE_LGA">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>61A81624-5985-96F1-95D3-DB84C31279B8</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LGA_lga_code" id="9DC8AF82-E93B-CC8E-CD3C-DEE3C842EED6">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[lga code ]]></commentInRDBMS>
+<generatorID>1EBA599C-6D60-AEDB-B992-B6EF0D2F0E15</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2D23930-CC08-9D9A-2F2C-515D6B51BCC0" referredColumn="67ED6E2E-64AA-D43D-33B7-2FD2BFBCDF8C"/>
+</associations>
+</Column>
+<Column name="FIRE_EVENT_fire_id" id="AAD87D73-EF89-8F4F-219C-4D7C4A4A785D">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire id]]></commentInRDBMS>
+<generatorID>4A57FC4B-A85C-03D3-D300-CEE0E65FF768</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D50F722F-A7CF-4AD4-0682-BB480C752892" referredColumn="F9C6D3AA-F6E0-46B1-5B2B-BD35E5DFACC2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C257E51F-18FE-A001-42A4-32B1D26B8D88" name="FIRE_LGA_PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>8891BD2F-E8D4-9EDD-310C-D4E851F63E4D</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DC8AF82-E93B-CC8E-CD3C-DEE3C842EED6"/>
+<colUsage columnID="AAD87D73-EF89-8F4F-219C-4D7C4A4A785D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87EE2620-DBFF-DE79-971D-018CFFF02389" name="fire_event_lga">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>795E00C8-0BE7-F743-E1C9-2298AA94289B</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAD87D73-EF89-8F4F-219C-4D7C4A4A785D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46C0276C-60D9-CFEB-32D9-BEFFA440E235" name="LGA_FIRE">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 11:53:43 UTC</createdTime>
+<generatorID>30167181-957D-B733-6410-A92F88FC3C27</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DC8AF82-E93B-CC8E-CD3C-DEE3C842EED6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4271ABFC-BD5D-7B4C-DA9E-808D0720FEFF" name="BD_ASSESSOR_VISIT">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:35:01 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bd_id" id="0A46F2A3-A0DD-D8CC-44E6-5F65A8D6C3EC">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:36:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[building damage id (surrogate key)]]></commentInRDBMS>
+<generatorID>AFF3480B-53C4-63CC-3840-4EFF8D2BB02C</generatorID>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<referedAttribute>2C211A42-4556-9406-DB9C-5A010E7F73B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bdav_datetime_arrived" id="ACA3C06D-0591-54AB-AE74-D77AD461B5FA">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:35:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[bd assessor arrive date]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bdav_datetime_departed" id="7D6862D2-BECE-2E4C-CA23-D45EFED6355D">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:36:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[bdav_datetime_departed]]></commentInRDBMS>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="846DED71-F320-3727-1B74-13333BD9670E" name="BD_INSURER_VISIT PK">
+<createdBy>tianyuema</createdBy>
+<createdTime>2022-01-27 09:37:15 UTC</createdTime>
+<ownerDesignName>nfs_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DBA08B5C-12A3-9780-723B-3EAEDF5E7199" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0A46F2A3-A0DD-D8CC-44E6-5F65A8D6C3EC</attributeRef>
+<attributeRef>ACA3C06D-0591-54AB-AE74-D77AD461B5FA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
